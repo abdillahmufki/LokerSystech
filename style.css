@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+  background-color: #fff;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-scroll {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-100%);
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 100px;
+}
+
+select,
+.form-control:focus {
+  box-shadow: none;
+}
+
+.card__pencarian {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.card-body__loker {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 50px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.card-body__loker:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transform: translate(0px, -5px);
+}
+.text_bidang,
+.lokasi {
+  font-size: 14px;
+  color: #031898;
+}
+
+.text_bidang i,
+.text_lokasi i {
+  font-size: 16px;
+}
+
+.wrap__header {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 100px;
+}
+
+.wrap-pencarian__card input {
+  border-radius: 20px;
+}
+
+.garis__header {
+  border: 6px solid #031898;
+  border-radius: 5px;
+}
+
+@media (max-width: 420px) {
+  .wrap-pencarian__card button {
+    padding: 10px 20px;
+  }
+
+  .pencarian__button-wrap {
+    display: grid !important;
+  }
+
+  .card__pencarian {
+    padding: 30px 30px;
+  }
+  .btn__bagian-group button {
+    display: none;
+  }
+
+  .loker__show {
+    padding: 10px;
+  }
+}
+
+.btn-primary {
+  background: #031898;
+  background: -moz-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #031898),
+    color-stop(100%, #0481d4)
+  );
+  background: -webkit-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: -o-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: -ms-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: linear-gradient(to right, #031898 0%, #0481d4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#031898', endColorstr='#0481d4', GradientType=1 );
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+.wrap-pencarian__card .pencarian__button-wrap button:hover {
+  opacity: 0.8;
+}
+
+.btn-1 button {
+  background-color: #0481d4;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  opacity: 60%;
+}
+.btn-1 button:hover {
+  background-color: #0481d4;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 20px;
+  opacity: 100%;
+}
+
+footer {
+  background-color: #212121;
+  color: #fff;
+  padding: 20px;
+}

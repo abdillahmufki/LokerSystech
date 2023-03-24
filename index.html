@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+  <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!--------------------------Google Font---------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+
+
+  <!----------------------Style favicon----------------------------->
+  <link rel="icon" href="../assets/images/logo/logoDcv2.png" />
+  <title>Home Pencari Kerja</title>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="icon" href="assets/logo/logoDcv2.png" />
+  <script src="https://unpkg.com/slim-select@latest/dist/slimselect.min.js"></script>
+  <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+  </link>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" id="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="assets/logo/logoDcv2.png" width="80" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex justify-content-end" id="navbar-collapse">
+        <ul class="navbar-nav gx-5">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap-header" style="
+  height: 350px;
+  background-image:
+  url('assets/logo/bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+ ">
+      <div class="pt-5">
+        <div class="container d-flex justify-content-center">
+          <div class="row">
+            <div class="col-12 text-center pt-5">
+              <h1 class="fw-bold">Lowongan Pekerjaan</h1>
+              <hr class="garis__header">
+              <p>Mulailah menemukan tujuan Anda bersama <strong>PT. GESTALT SISTEM TEKNOLOGI</strong>. Lihat lowongan
+                terbaru kami di bawah
+                ini.</p>
+              <br>
+              <img src="assets/logo/systech.png" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrap-pencarian__card">
+      <div class="container">
+        <div class="card__pencarian">
+          <div class="card-body__pencarian">
+            <form id="form">
+              <div class="row g-3">
+                <div class="col-lg-4 col-sm-12">
+                  <select id="lokasi" class="px-3 py-2" style="border-radius: 20px;">
+                    <option selected value="">Semua Lokasi</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="thailand">Thailand</option>
+                  </select>
+                </div>
+                <div class="col-lg-8 col-sm-12">
+                  <div class="row g-2">
+                    <div class="col-lg-8 col-sm-6">
+                      <input id="pencarian" type="text" class="form-control py-2" placeholder="Masukan keyword">
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                      <div id="cari" class="pencarian__button-wrap">
+                        <button type="submit" class="btn btn-primary px-5 py-2">Cari</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <dv id="btn-group__pencarian" class="btn__bagian-group d-flex flex-row my-3">
+              <div class="btn-1 px-1">
+                <button class="btn btn-primary">Marketing</button>
+              </div>
+              <div class="btn-1 px-1">
+                <button class="btn btn-primary">Infomasi Teknologi</button>
+              </div>
+              <div class="btn-1 px-1">
+                <button class="btn btn-primary">Sales Operasi</button>
+              </div>
+            </dv>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loker__show py-5">
+      <div class="container">
+        <di class="row g-5">
+
+          <div class="col-lg-4">
+            <div class="card__loker" style="width: 22rem;">
+              <div class="card-body__loker">
+                <h5 class="card-title fw-bold">Software Engineer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <div class="row pt-5">
+                  <div class="col">
+                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                  </div>
+                  <div class="col">
+                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="btn__wrap d-grid">
+                  <a href="" class="btn btn-primary">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card__loker" style="width: 22rem;">
+              <div class="card-body__loker">
+                <h5 class="card-title fw-bold">Staff IT</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <div class="row pt-5">
+                  <div class="col">
+                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                  </div>
+                  <div class="col">
+                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="btn__wrap d-grid">
+                  <a href="" class="btn btn-primary">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card__loker" style="width: 22rem;">
+              <div class="card-body__loker">
+                <h5 class="card-title fw-bold">Web Developer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <div class="row pt-5">
+                  <div class="col">
+                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                  </div>
+                  <div class="col">
+                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="btn__wrap d-grid">
+                  <a href="" class="btn btn-primary">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="card__loker" style="width: 22rem;">
+              <div class="card-body__loker">
+                <h5 class="card-title fw-bold">Software Engineer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <div class="row pt-5">
+                  <div class="col">
+                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                  </div>
+                  <div class="col">
+                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="btn__wrap d-grid">
+                  <a href="" class="btn btn-primary">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card__loker" style="width: 22rem;">
+              <div class="card-body__loker">
+                <h5 class="card-title fw-bold">Staff IT</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <div class="row pt-5">
+                  <div class="col">
+                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                  </div>
+                  <div class="col">
+                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="btn__wrap d-grid">
+                  <a href="" class="btn btn-primary">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="card__loker" style="width: 22rem;">
+              <div class="card-body__loker">
+                <h5 class="card-title fw-bold">Web Developer</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <div class="row pt-5">
+                  <div class="col">
+                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                  </div>
+                  <div class="col">
+                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                  </div>
+                  <hr>
+                </div>
+                <div class="btn__wrap d-grid">
+                  <a href="" class="btn btn-primary">Lihat Detail</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </di>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <hr />
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col mb-3">
+          <div class="row">
+            <div class="col-12 mb-3">
+              <img src="assets/logo/logoDcv2.png" width="100" alt="logo-digitalCV" />
+            </div>
+            <div class="col-12 ms-4 py-2">
+              <img src="assets/logo/systech.png" alt="" />
+              <p class="footer-text fw-bold">PT. GESTALT SISTEM TEKNOLOGI</p>
+            </div>
+            <div class="col-12 ms-4 py-2">
+              <img src="assets/logo/gestalt.png" alt="" />
+              <p class="footer-text fw-bold">GESTALT CENTER</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 ms-4 fw-bold">
+          <!-- Links -->
+          <h4 class="fw-bold mb-4">Kontak</h4>
+          <p><i class="bi bi-telephone-fill"></i> (022) 8606 5353</p>
+          <p><i class="bi bi-whatsapp"></i> 0811 779 7779</p>
+          <p>
+            <i class="bi bi-geo-alt-fill"></i> Istana Pasteur Regency <br />
+            Kav. CRB 91B, Bandung
+          </p>
+          <p><i class="bi bi-envelope"></i> support @gestaltsys.tech</p>
+        </div>
+      </div>
+      <hr>
+      <p class="text-center">Copyright © 2022 PT. Gestalt Sistem Teknologi. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="script.js">
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const form = $("#form");
+    const cards = $(".card__loker");
+
+    function filterCards() {
+      const pencarian = $("#pencarian").val().toLowerCase();
+      const lokasi = $("#lokasi").val().toLowerCase();
+
+      cards.each(function () {
+        const judul = $(this).find("h5").text().toLowerCase();
+        const deskripsi = $(this).find("p").text().toLowerCase();
+        const lokasiCard = $(this).find(".lokasi").text().toLowerCase();
+
+        if (judul.indexOf(pencarian) > -1 || deskripsi.indexOf(pencarian) > -1) {
+          if (lokasiCard.indexOf(lokasi) > -1 || lokasi === "") {
+            $(this).show();
+          } else {
+            $(this).hide();
+          }
+        } else {
+          $(this).hide();
+        }
+      });
+    }
+
+    form.on("submit", function (event) {
+      event.preventDefault();
+      filterCards();
+    });
+  </script>
+</body>
+
+</html>

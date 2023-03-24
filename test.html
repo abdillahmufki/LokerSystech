@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card__loker {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .card__loker img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .card__loker h5 {
+            font-size: 20px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .card__loker p {
+            font-size: 16px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form">
+        <div class="row g-3">
+            <div class="col-lg-4 col-sm-12">
+                <select id="lokasi" class="px-3 py-2" style="border-radius: 20px;">
+                    <option selected value="">Semua Lokasi</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="indonesia">Indonesia</option>
+                    <option value="thailand">Thailand</option>
+                </select>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+                <div class="row g-2">
+                    <div class="col-lg-8 col-sm-6">
+                        <input id="pencarian" type="text" class="form-control py-2" placeholder="Masukan keyword">
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div id="cari" class="pencarian__button-wrap">
+                            <button type="submit" class="btn btn-primary px-5 py-2">Cari</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <div class="loker__show py-5">
+        <div class="container">
+            <di class="row g-5">
+
+                <div class="col-lg-4">
+                    <div class="card__loker" style="width: 22rem;">
+                        <div class="card-body__loker">
+                            <h5 class="card-title fw-bold">Software Engineer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <div class="row pt-5">
+                                <div class="col">
+                                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                                </div>
+                                <div class="col">
+                                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="btn__wrap d-grid">
+                                <a href="" class="btn btn-primary">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card__loker" style="width: 22rem;">
+                        <div class="card-body__loker">
+                            <h5 class="card-title fw-bold">Staff IT</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <div class="row pt-5">
+                                <div class="col">
+                                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                                </div>
+                                <div class="col">
+                                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="btn__wrap d-grid">
+                                <a href="" class="btn btn-primary">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card__loker" style="width: 22rem;">
+                        <div class="card-body__loker">
+                            <h5 class="card-title fw-bold">Web Developer</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <div class="row pt-5">
+                                <div class="col">
+                                    <p class="text_bidang"><i class="bi bi-briefcase-fill"></i> Infomasi Teknologi</p>
+                                </div>
+                                <div class="col">
+                                    <p class="lokasi"><i class="bi bi-geo-alt-fill"></i> Indonesia</p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="btn__wrap d-grid">
+                                <a href="" class="btn btn-primary">Lihat Detail</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+        </div>
+    </div>
+
+
+    <div class="card__loker">
+        <img src="gambar.jpg" alt="Gambar">
+        <h5>Judul</h5>
+        <p>Deskripsi</p>
+        <span class="lokasi">Lokasi</span>
+    </div>
+    <div class="card__loker">
+        <img src="gambar.jpg" alt="Gambar">
+        <h5>Judul</h5>
+        <p>Deskripsi</p>
+        <span class="lokasi">Bandung</span>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        const form = $("#form");
+        const cards = $(".card__loker");
+
+        function filterCards() {
+            const pencarian = $("#pencarian").val().toLowerCase();
+            const lokasi = $("#lokasi").val().toLowerCase();
+
+            cards.each(function () {
+                const judul = $(this).find("h5").text().toLowerCase();
+                const deskripsi = $(this).find("p").text().toLowerCase();
+                const lokasiCard = $(this).find(".lokasi").text().toLowerCase();
+
+                if (judul.indexOf(pencarian) > -1 || deskripsi.indexOf(pencarian) > -1) {
+                    if (lokasiCard.indexOf(lokasi) > -1 || lokasi === "") {
+                        $(this).show();
+                    } else {
+                        $(this).hide();
+                    }
+                } else {
+                    $(this).hide();
+                }
+            });
+        }
+
+        form.on("submit", function (event) {
+            event.preventDefault();
+            filterCards();
+        });
+    </script>
+</body>
+
+</html>
