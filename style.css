@@ -81,7 +81,7 @@ select,
 }
 
 .wrap-header {
-  height: 375px;
+  height: 400px;
   background-image: url("assets/logo/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
