@@ -44,17 +44,18 @@ select,
 }
 
 .card__pencarian {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 7px 25px 0px;
   transition: 0.3s;
   padding: 50px;
   border-radius: 10px;
 }
 
 .card-body__loker {
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid rgb(235, 235, 235);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 7px 25px 0px;
   transition: 0.3s;
   padding: 50px;
-  border-radius: 20px;
+  border-radius: 15px;
   transition: all 0.3s ease-in-out 0s;
 }
 
@@ -62,6 +63,12 @@ select,
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   transform: translate(0px, -5px);
 }
+
+.card__loker hr {
+  border: 1px solid #031898;
+  width: 22rem;
+}
+
 .text_bidang,
 .lokasi {
   font-size: 14px;
@@ -73,10 +80,12 @@ select,
   font-size: 16px;
 }
 
-.wrap__header {
+.wrap-header {
+  height: 375px;
+  background-image: url("assets/logo/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  padding: 100px;
+  background-position: center;
 }
 
 .wrap-pencarian__card input {
@@ -88,7 +97,30 @@ select,
   border-radius: 5px;
 }
 
+@media (min-width: 1024px) {
+  .card-body__pencarian {
+    margin-left: 10px;
+  }
+  .wrap-pencarian__card button {
+    padding: 10px 20px;
+  }
+  .pencarian__button-wrap {
+    display: grid !important;
+  }
+}
+@media (max-width: 1024px) {
+  .card-body__pencarian {
+    margin-left: 10px;
+  }
+  .btn__bagian-group button {
+    display: none;
+  }
+}
+
 @media (max-width: 420px) {
+  .wrap-header {
+    height: 400px;
+  }
   .wrap-pencarian__card button {
     padding: 10px 20px;
   }
@@ -100,6 +132,7 @@ select,
   .card__pencarian {
     padding: 30px 30px;
   }
+
   .btn__bagian-group button {
     display: none;
   }
