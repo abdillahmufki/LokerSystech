@@ -21,9 +21,9 @@ a:hover {
   text-decoration: underline;
   color: #000;
 }
-.navbar {
+.navbar-warning {
   transition: all 0.3s ease;
-  background-color: #fff;
+  background-color: #ffe31d;
   box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -31,7 +31,7 @@ a:hover {
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
   transform: translateY(-100%);
 }
-.navbar a {
+.navbar-warning a {
   float: left;
   display: block;
   color: #000;
@@ -40,13 +40,13 @@ a:hover {
   font-size: 16px;
 }
 
-.navbar a:hover {
+.navbar-warning a:hover {
   text-decoration: underline;
   font-weight: bold;
 }
 
 main {
-  margin-top: 100px;
+  padding-top: 80px;
 }
 
 select,
@@ -94,7 +94,7 @@ select,
 }
 
 .wrap-header {
-  height: 400px;
+  height: 450px;
   background-image: url("assets/logo/bg.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -132,7 +132,7 @@ select,
 
 @media (max-width: 420px) {
   .wrap-header {
-    height: 400px;
+    height: 450px;
   }
   .wrap-pencarian__card button {
     padding: 10px 20px;
