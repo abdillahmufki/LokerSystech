@@ -71,7 +71,9 @@ select,
 }
 
 .card-body__loker:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 4px 15px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 4px 15px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 4px 15px -4px rgba(0, 0, 0, 0.75);
   transform: translate(0px, -5px);
 }
 .card__loker {
@@ -106,7 +108,7 @@ select,
 }
 
 .garis__header {
-  border: 6px solid #031898;
+  border: 4px solid #031898;
   border-radius: 5px;
 }
 
@@ -173,6 +175,26 @@ select,
   border: none;
   color: white;
   font-weight: 500;
+}
+.btn-primary:hover {
+  background: #031898;
+  background: -moz-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, #031898),
+    color-stop(100%, #0481d4)
+  );
+  background: -webkit-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: -o-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: -ms-linear-gradient(left, #031898 0%, #0481d4 100%);
+  background: linear-gradient(to right, #031898 0%, #0481d4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#031898', endColorstr='#0481d4', GradientType=1 );
+  border-radius: 20px;
+  border: none;
+  color: white;
+  font-weight: 500;
+  opacity: 0.8;
 }
 .wrap-pencarian__card .pencarian__button-wrap button:hover {
   opacity: 0.8;
