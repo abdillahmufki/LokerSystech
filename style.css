@@ -60,6 +60,13 @@ select,
   padding: 50px;
   border-radius: 10px;
 }
+.card__container {
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 7px 25px 0px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
 
 .card-body__loker {
   border: 1px solid rgb(235, 235, 235);
@@ -219,6 +226,15 @@ select,
 .btn__wrap a {
   text-decoration: none;
   color: #fff;
+}
+
+.card__loker i {
+  font-size: 18px;
+  lin-height: 16px;
+}
+
+.right-side .text__right-side {
+  color: #0481d4;
 }
 
 footer {
