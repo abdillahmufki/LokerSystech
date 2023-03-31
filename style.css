@@ -49,6 +49,10 @@ main {
   padding-top: 80px;
 }
 
+.main__job-detail {
+  margin-top: 2rem;
+}
+
 select,
 .form-control:focus {
   box-shadow: none;
@@ -119,6 +123,20 @@ select,
   border-radius: 5px;
 }
 
+.right-side h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.detail__content h4 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+..detail__content p {
+  font-size: 14px;
+}
+
 @media (min-width: 1024px) {
   .card-body__pencarian {
     margin-left: 10px;
@@ -140,6 +158,9 @@ select,
 }
 
 @media (max-width: 420px) {
+  .card__header {
+    margin-top: 3rem;
+  }
   .wrap-header {
     height: 450px;
   }
