@@ -58,6 +58,13 @@ select,
   box-shadow: none;
 }
 
+.card__update-password {
+  width: 50rem;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 7px 25px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
 .card__pencarian {
   box-shadow: rgba(0, 0, 0, 0.08) 0px 7px 25px 0px;
   transition: 0.3s;
@@ -225,6 +232,23 @@ select,
   opacity: 0.8;
 }
 .wrap-pencarian__card .pencarian__button-wrap button:hover {
+  opacity: 0.8;
+}
+
+.btn-password {
+  background-color: #ffb91e;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.btn-password:hover {
+  background-color: #ffb91e;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 6px;
   opacity: 0.8;
 }
 
